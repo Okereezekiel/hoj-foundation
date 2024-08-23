@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/47796e70db.js" crossorigin="anonymous"></script>
+    
+    <title>OUR HOJ</title>
+    <link rel="stylesheet" href="./static/assets/css/style.css">
+    <link rel="stylesheet" href="./static/assets/css/popform.css">
+    <link rel="stylesheet" href="./static/assets/css/intropage.css">
+    <link rel="stylesheet" href="./static/assets/css/navbar.css">
+</head>
+
+<body>
+    <center>
+        
+    </center>
+    <div id="popupForm" class="popup-form">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="form-title">Join Us!</h2>
+            <form method="post" action="/" enctype="multipart/form-data">
+                <input type="hidden" name="csrfmiddlewaretoken" value="0OtWr5tZl1OXF31Uvf3LbzbfEUzsE8xtwFTNtqv5fjg4yoKLp9RhWQDzCHi2PBcu">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                <label for="email">Phone Number</label>
+                <input type="number" id="email" name="phone" placeholder="Phone Number" required>
+                <label for="ward">Gender:</label>
+                    <select id="name" name="gender" onchange="displaySelectedWards()">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                <label for="ward" style="margin-top:14px">Choose Your Constituency Ward:</label>
+                    <select id="name" name="ward" onchange="displaySelectedWards()">
+                        <option value="ejigbo">Ejigbo Ward</option>
+                        <option value="ilasamaja">Ilasamaja Ward</option>
+                        <option value="isolo">Isolo Ward</option>
+                        <option value="ishaga">Ishaga Ward</option>
+                        <option value="okota">Okota Ward</option>
+                        <option value="ajaoestate">Ajao Estate</option>
+                    </select>
+                <button type="submit" class="submit-btn">Submit</button>
+                <br><h6 style="text-align: center;">The HOJ app in live on play store and app store, download it, and you will automatically
+                    qualify for a <b style="color:rgb(138, 24, 24);">monthly data recharge</b> of up to N1,000 on your phone line.</h6>
+            </form>
+        </div>
+    </div>
+    <div class="intro-container">
+        <div class="intro-content">     
+            <div class="hojlogo">
+                <img src="./static/images/logo2.jpg" width="60" height="60" style="border-radius:50%; margin-bottom: 20px; margin-top: 25px; 
+                border-style: solid; border-color: brown;">
+            </div>
+            <p class="welcome-text">Welcome to my official website.</p>
+            <h2> I am  Hon. Okey Joe Jesse</h2> 
+            <p></p>
+<h1 class="surname"> Onuakalusi</h1>
+            <p class="social-politician">Member representing Oshodi Isolo in the House of Representatives, I am committed to serving the people of <b style="color:rgb(245, 8, 8);">Oshodi-Isolo Federal Constituency II,</b> and working tirelessly to address the issues that matter most to our community.</p>
+
+            <p class="opportunity-text">Here, you will find updates on my work in the <b style="color:rgb(55, 143, 66);">chamber</b>, my initiatives, projects, and resources to help you stay informed and engaged.<span> I invite you to<b style="color:rgb(245, 8, 8);"><i> explore this site</i></b>, share your thoughts and ideas
+                and contact me to discuss how I can better serve you.</b></span></p>
+            <p class="opportunity-text"><i>Together, let's build a brighter future for our constituency and our great nation</i></p>
+            <button href="" id="openPopupBtn" class="open-popup-btn"><i class="fa fa-user"></i><br>Join Team Okey-Joe</button>
+            <a href="./selectoption/index.html"><button class="open-popup-btn"><i class="fa fa-thumbs-down"></i><br>No, Thank You!</button></a>
+            <a href="./selectoption/index.html"><button class="open-popup-btn"><i class="fa fa-thumbs-up"></i><br>Already Joined</button></a>
+            <div class="bottom-row" style="margin-bottom:20px;">
+                <div>
+                <img src="./static/images/logo.jpg" width="60" height="60"><br>
+</div>
+                <div>
+                <img src="./static/images/nasslogo.jpg" width="60" height="60"><br>
+</div>
+                <div>
+                <img src="./static/images/lagoslogo.png" width="60" height="60"><br>
+</div>
+            </div>
+        </div>
+        
+        <section class="content">
+            
+        <div class="intro-image">
+            <img src="./static/images/teamokey.png" alt="Social Politician">
+        </div> 
+    </section>
+    </div>
+
+<!--  
+    <div class="for-apps">
+        <div>
+        <a href=""><img src="images/appstore.png" width="150" height="50"></a></div>
+        <div>
+            <a href=""><img src="images/playstore.png" width="150" height="50"></a>
+            </div>
+    </div> 
+-->
+
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> 
+        <a href="#" class="instagram"><i class="fa fa-whatsapp"></i></a> 
+      </div>
+    <div class="footer">
+        <p>&copy; Hon. Okey-Joe Onuakalusi - 2024</p>
+      </div>
+      
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./static/assets/js/scripts.js"></script>
+    <script src="./static/assets/js/script2.js"></script>
+    <script src="./static/assets/js/popform.js"></script>
+    <script>function hidePreloader() {
+        document.body.classList.add('loaded');
+        }</script>
+    <script>function displaySelectedWards() {
+            var selectedFruit = document.getElementById("fruit").value;
+            document.getElementById("selectedFruit").textContent = "You selected: " + selectedFruit;
+        }</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
+    <!-- scrollIt js --> 
+    <script src="./static/assets/js/scrollIt.min.js"></script> 
+    <script src="./static/assets/js/assets/js/wow.min.js"></script> 
+</body>
+</html>

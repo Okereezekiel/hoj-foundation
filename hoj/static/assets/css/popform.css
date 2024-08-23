@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ada6a6;
+}
+
+.open-popup-btn {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background-color: rgb(10, 24, 10);
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 1em;
+    width: 210px;
+    z-index: 999;
+    border-color:rgb(10, 24, 10);
+    box-shadow: 0 4px 8px rgba(245, 237, 237, 0.1), 0 6px 20px rgba(238, 162, 162, 0.1); /* Added border-shadow */
+}
+
+.open-popup-btn:hover {
+    background-color: rgb(13, 39, 13);
+}
+
+.popup-form {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    animation: fadeIn 0.5s;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.slide{
+    margin-top: 15px;
+    border-style: solid;
+    border-radius: 60%;
+    border-color: white;
+    border-width: 6px;
+    border-bottom: red;
+    border-top: red;
+}
+
+.slide > img {
+    width: 480px;
+    height: 500px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    border-color: rgb(23, 104, 23);
+}
+
+.submit-btn {
+    background-color: rgb(13, 39, 13);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 45px;
+}
+
+.submit-btn:hover {
+    background-color: rgb(13, 39, 13);
+}
+
+.form-title{
+    color:rgb(13, 39, 13);
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+select {
+    font-size: 1em;
+    height: 35px;
+}
+
+@media (max-width:480px) {
+    .open-popup-btn {
+        margin-top: 40px;
+        display: inline-block;
+        padding: 0.8em 0.5em;
+        background-color: rgb(10, 24, 10);
+        color: white;
+        text-decoration: none;
+        border-radius: 40px;
+        font-size: 1em;
+        width: 270px;
+        border-color:rgb(10, 24, 10);
+        z-index: 999;
+        box-shadow: 0 4px 8px rgba(245, 237, 237, 0.1), 0 6px 20px rgba(238, 162, 162, 0.1); /* Added border-shadow */
+    }
+
+    .slide > img {
+        width: 300px;
+        height: 300px;
+    }
+    .slide{
+        margin-top: 15px;
+        border-style: solid;
+        border-radius: 60%;
+        border-color: white;
+        border-width: 6px;
+        border-bottom: red;
+        border-top: red;
+    }
+}
